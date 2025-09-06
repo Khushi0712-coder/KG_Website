@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Section</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- FontAwesome for Bold Filled Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/cart.css">
+
+</head>
+
+<body>
+
+ <!-- Loader -->
+<div id="loader">
+  <!-- Blurred background layer -->
+  <div class="loader-bg"></div>
+
+  <!-- Loader Content (Logo) -->
+  <div class="loader-content">
+    <img src="/images/03d1d492-cec1-4f30-8a46-11ebdda1be97_removalai_preview.png" alt="Brand Logo" class="loader-logo img-fluid rounded-circle shadow">
+  </div>
+</div>
+
+  <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+
+    <!-- Brand (Same as Footer Style) -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" alt="Logo" class="rounded-circle"
+        style="width: 55px; height: 55px; object-fit: cover; margin-right: 10px;">
+      <div class="brand-text">
+        <h5 class="mb-0 text-warning">KISHTWAR GOLD</h5>
+        <p class="tagline">A FARMER'S BRAND</p>
+      </div>
+    </a>
+
+    <!-- Toggler for Mobile -->
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">PRODUCTS</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="review.html">REVIEWS</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+
+        <!-- Cart with Badge -->
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="cart.html">
+            <i class="fas fa-shopping-cart fa-lg text-warning"></i>
+            <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Shop Now Button -->
+      <a href="products.html" class="btn btn-warning ms-lg-3 fw-bold text-dark">
+        <i class="fas fa-bag-shopping"></i> SHOP NOW
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+
+
+<!-- Shopping Cart About Section -->
+<section class="about-hero">
+  <div class="overlay"></div>
+  <div class="container text-center">
+    <h1>Shopping Cart</h1>
+    <p>A Review your selected products</p>
+  </div>
+</section>
+
+
+<!-- Empty Cart Section -->
+<section class="empty-cart-section d-flex align-items-center justify-content-center text-center">
+  <div class="container">
+    <div class="empty-cart-content">
+      <!-- Cart Icon -->
+      <div class="cart-icon mb-4">
+        <i class="bi bi-cart-x-fill"></i>
+      </div>
+
+      <!-- Heading -->
+      <h2 class="fw-bold mb-3">Your cart is empty</h2>
+      <p class="text-muted mb-4">Add some delicious saffron products to get started!</p>
+
+      <!-- Button -->
+      <a href="products.html" class="btn btn-warning btn-lg fw-bold shadow-sm">
+        <i class="bi bi-bag-fill me-2"></i> Start Shopping
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Features Section -->
+<section class="features-section py-5">
+    <br><br>
+  <div class="container">
+    <div class="row text-center">
+      
+      <!-- Feature 1 -->
+      <div class="col-md-3 col-6 mb-4 mb-md-0">
+        <i class="fas fa-truck fa-2x text-warning mb-2"></i>
+        <h6 class="fw-bold">Free Shipping</h6>
+        <p class="text-muted small">On all orders</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="col-md-3 col-6 mb-4 mb-md-0">
+        <i class="fas fa-shield-alt fa-2x text-warning mb-2"></i>
+        <h6 class="fw-bold">Secure Payment</h6>
+        <p class="text-muted small">100% secure</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="col-md-3 col-6 mb-4 mb-md-0">
+        <i class="fas fa-certificate fa-2x text-warning mb-2"></i>
+        <h6 class="fw-bold">Authentic</h6>
+        <p class="text-muted small">GI tagged saffron</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="col-md-3 col-6">
+        <i class="fas fa-headset fa-2x text-warning mb-2"></i>
+        <h6 class="fw-bold">24/7 Support</h6>
+        <p class="text-muted small">Always here to help</p>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+</section>
+
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left Section -->
+    <div class="footer-about">
+      <div class="footer-brand">
+        <div class="footer-logo-circle">
+          <img src="/images/logo.png" alt="Logo">
+        </div>
+        <div>
+          <h2>KISHTWAR GOLD</h2>
+          <p class="tagline">A FARMER'S BRAND</p>
+        </div>
+      </div>
+      <p class="footer-text">
+        From the pristine valleys of Kishtwar, bringing you the world's finest GI-tagged saffron. 
+        Pure, authentic, and handpicked for excellence.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Products -->
+    <div class="footer-links">
+      <h3>Products</h3>
+      <ul>
+        <li><a href="#">Premium Saffron</a></li>
+        <li><a href="#">Gift Boxes</a></li>
+        <li><a href="#">Exclusive Collection</a></li>
+        <li><a href="#">Shopping Cart</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact Info</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Kishtwar, Jammu & Kashmir, India</p>
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa-solid fa-envelope"></i> info@kishtwargold.com</p>
+      <p><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</p>
+
+      <br>
+      <h3>Newsletter</h3>
+      <div class="newsletter">
+        <input type="email" id="newsletterEmail" placeholder="Your email">
+        <button id="newsletterBtn"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2024 Kishtwar Gold. All rights reserved.</p>
+    <div class="footer-policies">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Shipping Policy</a>
+    </div>
+  </div>
+
+  <!-- Scroll To Top -->
+  <a href="#" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a>
+</footer>
+
+<!-- ✅ Newsletter Toast -->
+<div id="newsletterToast" class="form-toast">
+  Successfully subscribed to newsletter! <span class="close-btn">&times;</span>
+</div>
+ 
+ 
+
+
+    <!-- Bootstrap JS -->
+     <script src="/js/cart.js"></script>
+     <script src="/js/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

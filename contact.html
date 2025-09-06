@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- FontAwesome for Bold Filled Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/contact.css">
+
+</head>
+<body>
+
+  <!-- Loader -->
+<div id="loader">
+  <!-- Blurred background layer -->
+  <div class="loader-bg"></div>
+
+  <!-- Loader Content (Logo) -->
+  <div class="loader-content">
+    <img src="/images/03d1d492-cec1-4f30-8a46-11ebdda1be97_removalai_preview.png" alt="Brand Logo" class="loader-logo img-fluid rounded-circle shadow">
+  </div>
+</div>
+    
+ <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+
+    <!-- Brand (Same as Footer Style) -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" alt="Logo" class="rounded-circle"
+        style="width: 55px; height: 55px; object-fit: cover; margin-right: 10px;">
+      <div class="brand-text">
+        <h5 class="mb-0 text-warning">KISHTWAR GOLD</h5>
+        <p class="tagline">A FARMER'S BRAND</p>
+      </div>
+    </a>
+
+    <!-- Toggler for Mobile -->
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">PRODUCTS</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="review.html">REVIEWS</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+
+        <!-- Cart with Badge -->
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="cart.html">
+            <i class="fas fa-shopping-cart fa-lg text-warning"></i>
+            <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Shop Now Button -->
+      <a href="products.html" class="btn btn-warning ms-lg-3 fw-bold text-dark">
+        <i class="fas fa-bag-shopping"></i> SHOP NOW
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+
+
+
+<!-- Contact About Section -->
+<section class="about-hero">
+  <div class="overlay"></div>
+  <div class="container text-center">
+    <h1>Get In Touch</h1>
+    <p>We'd love to hear from you and help with your saffron needs</p>
+  </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 contact-row">
+
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <div class="card shadow border-0 h-100">
+          <div class="card-body p-4 text-center">
+            <h3 class="mb-3 fw-bold section-heading text-warning">Send Us a Message</h3>
+            <p class="text-muted section-subheading">Have questions about our saffron? Want to place a bulk order? We're here to help!</p>
+
+            <!-- Success / Error Messages -->
+            <div id="formMessage"></div>
+
+            <form id="contactForm" class="text-start mt-4">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label"><b>Your Name</b></label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label"><b>Email Address</b> *</label>
+                  <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="col-12">
+                  <label for="subject" class="form-label"><b>Subject</b> *</label>
+                  <select class="form-select" id="subject" required>
+                    <option selected disabled>Select a subject</option>
+                    <option value="order">Bulk Order</option>
+                    <option value="inquiry">Product Inquiry</option>
+                    <option value="support">Customer Support</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label"><b>Message</b> *</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-warning text-dark fw-bold px-4" disabled>
+                    <i class="bi bi-send"></i> Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="card shadow border-0 h-100">
+          <div class="card-body p-4 text-center">
+            <h4 class="fw-bold mb-3 section-heading text-dark">Get in Touch</h4>
+
+            <p><i class="bi bi-geo-alt-fill text-warning"></i> <strong>Address</strong><br>
+              Kishtwar District<br>Jammu & Kashmir, India 182204</p>
+
+            <p><i class="bi bi-telephone-fill text-warning"></i> <strong>Phone</strong><br>
+              +91 98765 43210<br>+91 98765 43211</p>
+
+            <p><i class="bi bi-envelope-fill text-warning"></i> <strong>Email</strong><br>
+              info@kishtwargold.com<br>orders@kishtwargold.com</p>
+
+            <p><i class="bi bi-clock-fill text-warning"></i> <strong>Business Hours</strong><br>
+              Monday - Saturday<br>9:00 AM - 7:00 PM IST<br>
+              Sunday: Closed</p>
+
+            <h6 class="fw-bold mt-4">Follow Us</h6>
+            <div class="d-flex justify-content-center gap-3 fs-4">
+              <a href="#" class="text-warning"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-warning"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-warning"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-warning"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="text-warning"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Quick Contact Section -->
+<section class="quick-contact-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-dark">Quick Contact Options</h2>
+      <p class="text-muted">Choose the best way to reach us</p>
+    </div>
+    <div class="row g-4">
+      <!-- Box 1 -->
+      <div class="col-md-4">
+        <div class="card shadow border-0 text-center p-4 h-100">
+          <div class="icon-circle mb-3 mx-auto">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <h5 class="fw-bold">WhatsApp</h5>
+          <p class="text-muted">Get instant response on WhatsApp for quick queries and orders.</p>
+          <a href="https://wa.me/+918169045778" class="btn btn-warning rounded-pill px-4 fw-bold">
+            <i class="bi bi-whatsapp"></i> Chat Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="col-md-4">
+        <div class="card shadow border-0 text-center p-4 h-100">
+          <div class="icon-circle mb-3 mx-auto">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <h5 class="fw-bold">Phone Call</h5>
+          <p class="text-muted">Speak directly with our customer <br> service team.</p>
+          <a href="tel:+918169045778" class="btn btn-warning rounded-pill px-4 fw-bold">
+            <i class="bi bi-telephone-fill"></i> Call Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="col-md-4">
+        <div class="card shadow border-0 text-center p-4 h-100">
+          <div class="icon-circle mb-3 mx-auto">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <h5 class="fw-bold">Email</h5>
+          <p class="text-muted">Send us detailed inquiries via email for comprehensive responses.</p>
+          <a href="mailto:info@kishtwargold.com" class="btn btn-warning rounded-pill px-4 fw-bold">
+            <i class="bi bi-envelope-fill"></i> Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+</section>
+
+
+<!-- Find Us Section -->
+<section class="find-us-section py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-dark">Find Us</h2>
+      <p class="text-muted">Located in the beautiful valleys of Kishtwar</p>
+    </div>
+
+    <div class="map-container shadow rounded-4 overflow-hidden">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26273.41820933934!2d75.711!3d33.313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1a3dca1a05d2f%3A0x8a5f1f7f6405c1d9!2sKishtwar!5e0!3m2!1sen!2sin!4v1699012345678"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <br>
+  </div>
+</section>
+
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left Section -->
+    <div class="footer-about">
+      <div class="footer-brand">
+        <div class="footer-logo-circle">
+          <img src="/images/logo.png" alt="Logo">
+        </div>
+        <div>
+          <h2>KISHTWAR GOLD</h2>
+          <p class="tagline">A FARMER'S BRAND</p>
+        </div>
+      </div>
+      <p class="footer-text">
+        From the pristine valleys of Kishtwar, bringing you the world's finest GI-tagged saffron. 
+        Pure, authentic, and handpicked for excellence.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Products -->
+    <div class="footer-links">
+      <h3>Products</h3>
+      <ul>
+        <li><a href="#">Premium Saffron</a></li>
+        <li><a href="#">Gift Boxes</a></li>
+        <li><a href="#">Exclusive Collection</a></li>
+        <li><a href="#">Shopping Cart</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact Info</h3>
+      <p><i class="fa-solid fa-location-dot"></i> Kishtwar, Jammu & Kashmir, India</p>
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa-solid fa-envelope"></i> info@kishtwargold.com</p>
+      <p><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</p>
+
+      <br>
+      <h3>Newsletter</h3>
+      <div class="newsletter">
+        <input type="email" id="newsletterEmail" placeholder="Your email">
+        <button id="newsletterBtn"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2024 Kishtwar Gold. All rights reserved.</p>
+    <div class="footer-policies">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Shipping Policy</a>
+    </div>
+  </div>
+
+  <!-- Scroll To Top -->
+  <a href="#" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a>
+</footer>
+
+<!-- ✅ Newsletter Toast -->
+<div id="newsletterToast" class="form-toast">
+  Successfully subscribed to newsletter! <span class="close-btn">&times;</span>
+</div>
+ 
+
+
+ <!-- Bootstrap JS -->
+  <script src="/js/contact.js"></script>
+  <script src="/js/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
