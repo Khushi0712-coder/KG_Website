@@ -30,30 +30,29 @@
   </div>
 </div> -->
 
-  <!-- Navbar Start -->
+<!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container-fluid">
 
-    <!-- Brand (Same as Footer Style) -->
+    <!-- Brand -->
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="images/logo.png" alt="Logo" class="rounded-circle"
-        style="width: 55px; height: 55px; object-fit: cover; margin-right: 10px;">
-      <div class="brand-text">
+      <img src="images/logo.png" alt="Logo" class="rounded-circle">
+      <div class="brand-text d-none d-sm-block">
         <h5 class="mb-0 text-warning">KISHTWAR GOLD</h5>
         <p class="tagline">A FARMER'S BRAND</p>
       </div>
     </a>
 
     <!-- Toggler for Mobile -->
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
       aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars text-warning"></i>
     </button>
 
     <!-- Navbar Links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center text-center">
         <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="products.html">PRODUCTS</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
@@ -61,19 +60,21 @@
         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
 
-        <!-- Cart with Badge -->
+        <!-- Cart -->
         <li class="nav-item">
           <a class="nav-link position-relative" href="cart.html">
             <i class="fas fa-shopping-cart fa-lg text-warning"></i>
             <span id="cart-count" class="cart-count">0</span>
           </a>
         </li>
-      </ul>
 
-      <!-- Shop Now Button -->
-      <a href="products.html" class="btn btn-warning ms-lg-3 fw-bold text-dark">
-        <i class="fas fa-bag-shopping"></i> SHOP NOW
-      </a>
+        <!-- Shop Now Button -->
+        <li class="nav-item mt-2 mt-lg-0">
+          <a href="products.html" class="shop-btn">
+            <i class="fas fa-bag-shopping"></i> SHOP NOW
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

@@ -82,28 +82,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Navbar Background */
-   /* Navbar Base */
+/* Navbar Base */
 .navbar {
-  background-color: #000000;
-  padding: 12px 30px;
+  background-color: #0c0c0c;
+  padding: 12px 20px;
   position: sticky;
   top: 0;
   z-index: 1050;
 }
 
-/* Logo Image (Visible + Round) */
+/* Logo Image */
 .navbar-brand img {
   width: 55px;
   height: 55px;
   margin-right: 10px;
   object-fit: cover;
-  border-radius: 50%;   /* Circle */
+  border-radius: 50%;
 }
 
 /* Logo Text */
-.brand-text h1 {
-  font-size: 20px;
+.brand-text h5 {
+  font-size: 18px;
   color: #ffb700;
   margin: 0;
   font-weight: bold;
@@ -122,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-nav .nav-link {
   color: #fff !important;
   font-weight: bold;
-  margin-right: 20px;
+  margin: 5px 12px;
   transition: color 0.3s ease, border-bottom 0.3s ease;
   position: relative;
 }
@@ -149,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(to right, #ffb700, #e6a400);
   color: #000 !important;
   font-weight: bold;
-  padding: 8px 18px;
+  padding: 8px 16px;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -163,8 +162,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
-
-/* Cart count badge */
+/* Cart Badge */
 .cart-count {
   position: absolute;
   top: -8px;
@@ -180,6 +178,17 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
 }
+
+/* Responsive */
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .shop-btn {
+    margin-top: 10px;
+  }
+}
+
 
 
 
