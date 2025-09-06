@@ -1,73 +1,65 @@
-/* Loader Background */
-#loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 9999;
-  transition: opacity 1s ease, visibility 1s ease;
-  overflow: hidden; 
-}
+ /* Loader Background */
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/images/Pure_Saffron_Background_No_Text.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 9999;
+      transition: opacity 1s ease, visibility 1s ease;
+    }
 
-/* Blurred background layer */
-#loader::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('/images/Pure_Saffron_Background_No_Text.png') center center/cover no-repeat;
-  background-size: cover;
-  background-position: center;
-  filter: blur(2px);  
-  z-index: 1;
-}
+    /* Loader hide hone par */
+    #loader.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
 
-/* Loader hide hone par */
-#loader.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
+    /* Loader Content */
+    .loader-content {
+      text-align: center;
+    }
 
-/* Loader Content */
-.loader-content {
-  text-align: center;
-  position: relative;
-  z-index: 2; /* ensure logo above blurred background */
-}
+    /* Logo Styling with gradient border */
+    .loader-logo {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      animation: zoomIn 1.5s ease-in-out forwards;
+      border: 6px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(45deg, gold, orange, goldenrod) border-box;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.6); /* glow effect */
+    }
 
-/* Logo Styling (responsive) */
-.loader-logo {
-  width: 45vw;             /* responsive width */
-  max-width: 300px;        /* desktop max size */
-  height: auto;            /* maintain aspect ratio */
-  border-radius: 50%;      /* circle */
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  animation: zoomIn 1.5s ease-in-out forwards;
-  border: none;
-  outline: none;
-  box-shadow: 0 0 25px rgba(255, 217, 0, 0.988); /* golden glow */
-}
+    /* Zoom In Animation */
+    @keyframes zoomIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
 
-/* Zoom In Animation */
-@keyframes zoomIn {
-  0% { transform: scale(0.5); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
-}
+    /* Fade In Animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
 
-/* Fade In Animation */
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
+    /* Webpage content */
+    #content {
+      display: none;
+      padding: 40px;
+      text-align: center;
+    }
 
 
 
