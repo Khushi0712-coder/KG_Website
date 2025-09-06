@@ -5,5 +5,6 @@ window.addEventListener("load", function() {
       setTimeout(() => {
         loader.classList.add("hidden");
         content.style.display = "block";
-      }, 1100); // loader 1.1s ke liye dikhega
+        document.body.style.overflow = "auto"; // scroll enable after loader
+      }, 2000); // loader 2s ke liye dikhega
     });
