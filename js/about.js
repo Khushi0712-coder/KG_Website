@@ -28,5 +28,3 @@ btn.addEventListener("click", function () {
 closeBtn.addEventListener("click", () => {
   toast.classList.remove("show");
 });
-
-
