@@ -409,19 +409,21 @@ h1, h2, h3, h4, h5, h6 {
 .social-icons a {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  border: 1px solid #ffc107;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffc107;
-  transition: 0.3s;
-  font-size: 16px;
+  transition: transform 0.3s, filter 0.3s;
+}
+.social-icons a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .social-icons a:hover {
-  background: #ffc107;
-  color: #111;
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
+
 
 /* Links */
 .footer-links h3,
