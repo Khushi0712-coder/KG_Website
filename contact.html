@@ -256,11 +256,11 @@
 </section>
 
 
- <!-- Footer -->
+<!-- Footer -->
 <footer class="footer">
   <div class="footer-container">
 
-    <!-- Left Section -->
+    <!-- About -->
     <div class="footer-about">
       <div class="footer-brand">
         <div class="footer-logo-circle">
@@ -286,8 +286,11 @@
 
     <!-- Quick Links -->
     <div class="footer-links">
-      <h3>Quick Links</h3>
-      <ul>
+      <h3 class="d-flex justify-content-between align-items-center"
+          data-bs-toggle="collapse" data-bs-target="#quickLinks" aria-expanded="false" aria-controls="quickLinks">
+        Quick Links <i class="fa-solid fa-chevron-down d-lg-none"></i>
+      </h3>
+      <ul id="quickLinks" class="collapse d-lg-block">
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -299,8 +302,11 @@
 
     <!-- Products -->
     <div class="footer-links">
-      <h3>Products</h3>
-      <ul>
+      <h3 class="d-flex justify-content-between align-items-center"
+          data-bs-toggle="collapse" data-bs-target="#productsLinks" aria-expanded="false" aria-controls="productsLinks">
+        Products <i class="fa-solid fa-chevron-down d-lg-none"></i>
+      </h3>
+      <ul id="productsLinks" class="collapse d-lg-block">
         <li><a href="#">Premium Saffron</a></li>
         <li><a href="#">Gift Boxes</a></li>
         <li><a href="#">Exclusive Collection</a></li>
@@ -310,20 +316,24 @@
 
     <!-- Contact Info -->
     <div class="footer-contact">
-      <h3>Contact Info</h3>
-      <p><i class="fa-solid fa-location-dot"></i> Kishtwar, Jammu & Kashmir, India</p>
-      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
-      <p><i class="fa-solid fa-envelope"></i> info@kishtwargold.com</p>
-      <p><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</p>
+      <h3 class="d-flex justify-content-between align-items-center"
+          data-bs-toggle="collapse" data-bs-target="#contactInfo" aria-expanded="false" aria-controls="contactInfo">
+        Contact Info <i class="fa-solid fa-chevron-down d-lg-none"></i>
+      </h3>
+      <div id="contactInfo" class="collapse d-lg-block">
+        <p><i class="fa-solid fa-location-dot"></i> Kishtwar, Jammu & Kashmir, India</p>
+        <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fa-solid fa-envelope"></i> info@kishtwargold.com</p>
+        <p><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</p>
 
-      <br>
-      <h3>Newsletter</h3>
-      <div class="newsletter">
-        <input type="email" id="newsletterEmail" placeholder="Your email">
-        <button id="newsletterBtn"><i class="fa-solid fa-paper-plane"></i></button>
+        <br>
+        <h3>Newsletter</h3>
+        <div class="newsletter">
+          <input type="email" id="newsletterEmail" placeholder="Your email">
+          <button id="newsletterBtn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
       </div>
     </div>
-
   </div>
 
   <!-- Footer Bottom -->
