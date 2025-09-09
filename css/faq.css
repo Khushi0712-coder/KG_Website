@@ -419,7 +419,7 @@ h2 {
 /* Golden button */
 .btn-contact {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 12px;
   background: linear-gradient(45deg, #ffb700, #d48b00);
   color: #000;
   font-weight: bold;
