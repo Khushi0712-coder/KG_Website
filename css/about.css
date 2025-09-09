@@ -267,16 +267,12 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-5px);
 }
 
-.stat-card h3 {
-  font-size: 28px;
-  font-weight: 700;
+.stat-card h2 {
   color: #ffb700;
   margin-bottom: 8px;
 }
 
-.stat-card p {
-  font-size: 14px;
-  font-weight: 500;
+.stat-card h5 {
   color: #222;
 }
 
