@@ -530,6 +530,13 @@ h2 {
   height: 100%;
   object-fit: contain;
 }
+.social-linkedin img {
+  background-color: #ffffff; /* white background */
+  border-radius: 20%;       /* circular icon */
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
 .social-icons a:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
