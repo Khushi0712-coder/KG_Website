@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   font-style: italic;
   margin: 0;
-  background: linear-gradient(90deg, #ffcc33, #ff9900);
+  background: linear-gradient(90deg, #ffffff, #ffffff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
