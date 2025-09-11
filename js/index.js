@@ -1,51 +1,51 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll(".add-to-cart");
+// document.addEventListener("DOMContentLoaded", () => {
+//     const buttons = document.querySelectorAll(".add-to-cart");
 
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        btn.classList.add("clicked");
-        btn.innerHTML = '<i class="bi bi-check-lg"></i> Added';
-      });
-    });
-  });
-
-
+//     buttons.forEach(btn => {
+//       btn.addEventListener("click", () => {
+//         btn.classList.add("clicked");
+//         btn.innerHTML = '<i class="bi bi-check-lg"></i> Added';
+//       });
+//     });
+//   });
 
 
 
-function showToast(message) {
-    const toast = document.getElementById("toast");
-    toast.textContent = message;
-    toast.classList.add("show");
 
-    // Hide after 3 sec
-    setTimeout(() => {
-      toast.classList.remove("show");
-    }, 3000);
-  }
 
-  document.querySelectorAll(".add-to-cart").forEach(button => {
-    button.addEventListener("click", function () {
-      const name = this.getAttribute("data-name");
-      const price = this.getAttribute("data-price");
+// function showToast(message) {
+//     const toast = document.getElementById("toast");
+//     toast.textContent = message;
+//     toast.classList.add("show");
 
-      // Get existing cart
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+//     // Hide after 3 sec
+//     setTimeout(() => {
+//       toast.classList.remove("show");
+//     }, 3000);
+//   }
 
-      // Add new product
-      cart.push({ name, price });
-      localStorage.setItem("cart", JSON.stringify(cart));
+//   document.querySelectorAll(".add-to-cart").forEach(button => {
+//     button.addEventListener("click", function () {
+//       const name = this.getAttribute("data-name");
+//       const price = this.getAttribute("data-price");
 
-      // Change button
-      this.textContent = "Added ✅";
-      this.classList.remove("btn-warning");
-      this.classList.add("btn-success");
-      this.disabled = true;
+//       // Get existing cart
+//       let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-      // Show success toast
-      showToast(name + " added to cart successfully!");
-    });
-  });
+//       // Add new product
+//       cart.push({ name, price });
+//       localStorage.setItem("cart", JSON.stringify(cart));
+
+//       // Change button
+//       this.textContent = "Added ✅";
+//       this.classList.remove("btn-warning");
+//       this.classList.add("btn-success");
+//       this.disabled = true;
+
+//       // Show success toast
+//       showToast(name + " added to cart successfully!");
+//     });
+//   });
 
 
 
