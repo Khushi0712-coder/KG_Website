@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cart.length === 0) {
       cartSummary.classList.add("d-none");
 
-      // ✅ Empty cart section as box/card
       cartItemsContainer.innerHTML = `
         <div class="col-12 d-flex justify-content-center">
           <div class="card shadow-sm p-5 text-center" style="max-width: 500px; width: 100%;">
@@ -33,19 +32,47 @@ document.addEventListener("DOMContentLoaded", () => {
       cartSummary.classList.remove("d-none");
 
       cart.forEach((item, index) => {
-        total += item.price;
+        item.qty = item.qty || 1;
+        total += item.price * item.qty;
+
         const div = document.createElement("div");
-        div.className = "col-12 col-md-6 col-lg-4";
+        div.className = "col-12 d-flex justify-content-center mb-3";
+
         div.innerHTML = `
-          <div class="card shadow-sm h-100 p-3 d-flex flex-column justify-content-between">
-            <img src="${item.image}" class="card-img-top mb-2" alt="${item.name}">
-            <h5 class="fw-bold">${item.name}</h5>
-            <p class="text-muted">₹${item.price}</p>
-            <button class="btn btn-danger remove-btn" data-index="${index}">
-              <i class="fa-solid fa-trash me-2"></i> Remove
-            </button>
+          <div class="d-flex align-items-center border rounded p-3 shadow-sm" style="max-width:600px; width:100%;">
+            
+            <!-- Product Image -->
+            <div class="me-3" style="width:80px; height:80px; flex-shrink:0;">
+              <img src="${item.image}" class="img-fluid rounded" style="object-fit:cover; width:100%; height:100%;" alt="${item.name}">
+            </div>
+
+            <!-- Product Info -->
+            <div class="flex-grow-1">
+              <h5 class="fw-bold mb-1">${item.name}</h5>
+              <p class="text-muted mb-1">₹${item.price}</p>
+            </div>
+
+            <!-- Actions -->
+            <div class="d-flex flex-column align-items-center">
+  <!-- Remove Button -->
+  <button class="btn btn-link p-0 remove-btn mb-3" data-index="${index}" title="Remove item" style=" color:red;">
+    Remove
+  </button>
+
+  <!-- Quantity Controls -->
+  <div class="d-flex align-items-center">
+    <span class="fw-bold me-2">QTY</span>
+    <button class="btn btn-outline-secondary btn-sm qty-decrease me-2" data-index="${index}">-</button>
+    <input type="text" class="form-control form-control-sm text-center qty-input" 
+           style="width:50px;" value="${item.qty}" data-index="${index}" readonly>
+    <button class="btn btn-outline-secondary btn-sm qty-increase ms-2" data-index="${index}">+</button>
+  </div>
+</div>
+
+
           </div>
         `;
+
         cartItemsContainer.appendChild(div);
       });
     }
@@ -54,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cartCountElement.textContent = cart.length;
   }
 
-  // 🗑 Remove item
+  // Remove item & qty controls
   cartItemsContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("remove-btn") || e.target.closest(".remove-btn")) {
       const btn = e.target.closest(".remove-btn");
@@ -63,10 +90,22 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("cart", JSON.stringify(cart));
       renderCart();
     }
+
+    const index = e.target.getAttribute("data-index");
+    if (e.target.classList.contains("qty-increase")) {
+      cart[index].qty = (cart[index].qty || 1) + 1;
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
+    } else if (e.target.classList.contains("qty-decrease")) {
+      cart[index].qty = Math.max(1, (cart[index].qty || 1) - 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
+    }
   });
 
   renderCart();
 });
+
 
 
 // 🟡 Newsletter section
@@ -98,3 +137,7 @@ btn.addEventListener("click", function () {
 closeBtn.addEventListener("click", () => {
   toast.classList.remove("show");
 });
+
+
+
+
