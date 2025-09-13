@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <!-- Quantity Controls -->
   <div class="d-flex align-items-center">
-    <span class="fw-bold me-2">QTY</span>
     <button class="btn btn-outline-secondary btn-sm qty-decrease me-2" data-index="${index}">-</button>
     <input type="text" class="form-control form-control-sm text-center qty-input" 
            style="width:33px;" value="${item.qty}" data-index="${index}" readonly>
