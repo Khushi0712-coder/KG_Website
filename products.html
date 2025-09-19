@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,58 +16,59 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/products.css">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="images/logo.png" alt="Logo" class="rounded-circle">
-      <div class="brand-text d-none d-sm-block">
-        <h5 class="mb-0 text-warning">KISHTWAR GOLD</h5>
-        <p class="tagline">A FARMER'S BRAND</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.png" alt="Logo" class="rounded-circle">
+        <div class="brand-text d-none d-sm-block">
+          <h5 class="mb-0 text-warning">KISHTWAR GOLD</h5>
+          <p class="tagline">A FARMER'S BRAND</p>
+        </div>
+      </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fas fa-bars text-warning"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center text-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">PRODUCTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="review.html">REVIEWS</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+
+          <!-- Cart -->
+          <li class="nav-item">
+            <a class="nav-link position-relative" href="cart.html">
+              <i class="fas fa-shopping-cart fa-lg text-warning"></i>
+              <span id="cart-count" class="cart-count">0</span>
+            </a>
+          </li>
+
+          <li class="nav-item mt-2 mt-lg-0">
+            <a href="products.html" class="shop-btn">
+              <i class="fas fa-bag-shopping"></i> SHOP NOW
+            </a>
+          </li>
+        </ul>
       </div>
-    </a>
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNav">
-      <i class="fas fa-bars text-warning"></i>
-    </button>
-    <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
-      <ul class="navbar-nav align-items-lg-center text-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-        <li class="nav-item"><a class="nav-link" href="products.html">PRODUCTS</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
-        <li class="nav-item"><a class="nav-link" href="review.html">REVIEWS</a></li>
-        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
-
-        <!-- Cart -->
-        <li class="nav-item">
-          <a class="nav-link position-relative" href="cart.html">
-            <i class="fas fa-shopping-cart fa-lg text-warning"></i>
-            <span id="cart-count" class="cart-count">0</span>
-          </a>
-        </li>
-
-        <li class="nav-item mt-2 mt-lg-0">
-          <a href="products.html" class="shop-btn">
-            <i class="fas fa-bag-shopping"></i> SHOP NOW
-          </a>
-        </li>
-      </ul>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- Hero -->
-<section class="about-hero">
-  <div class="overlay"></div>
-  <div class="container text-center">
-    <h1>Welcome to Our Saffron Store</h1>
-    <p>Experience the authentic taste and aroma of pure Kishtwar saffron, handpicked and delivered to your doorstep.</p>
-    <a href="#products" class="shop-btn mt-3">Shop Now</a>
-  </div>
-</section>
+  <!-- Hero -->
+  <section class="about-hero">
+    <div class="overlay"></div>
+    <div class="container text-center">
+      <h1>Welcome to Our Saffron Store</h1>
+      <p>Experience the authentic taste and aroma of pure Kishtwar saffron, handpicked and delivered to your doorstep.
+      </p>
+      <a href="#products" class="shop-btn mt-3">Shop Now</a>
+    </div>
+  </section>
 
 <!-- Products Section -->
 <section id="products" class="products-section py-5">
@@ -74,27 +76,27 @@
 
     <!-- Filter Controls -->
     <div class="container">
-  <div class="filter-controls">
-    <div class="filter-group">
-      <label for="categoryFilter">Category:</label>
-      <select id="categoryFilter">
-        <option value="all">All Products</option>
-        <option value="exclusive">Exclusive</option>
-        <option value="gift">Gift Box</option>
-        <option value="premium">Premium</option>
-      </select>
-    </div>
+      <div class="filter-controls">
+        <div class="filter-group">
+          <label for="categoryFilter">Category:</label>
+          <select id="categoryFilter">
+            <option value="all">All Products</option>
+            <option value="exclusive">Exclusive</option>
+            <option value="gift">Gift Box</option>
+            <option value="premium">Premium</option>
+          </select>
+        </div>
 
-    <div class="filter-group">
-      <label for="sortFilter">Sort by:</label>
-      <select id="sortFilter">
-        <option value="name">Name</option>
-        <option value="low-high">Price: Low to High</option>
-        <option value="high-low">Price: High to Low</option>
-      </select>
+        <div class="filter-group">
+          <label for="sortFilter">Sort by:</label>
+          <select id="sortFilter">
+            <option value="name">Name</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
     <!-- Product Grid -->
     <div id="productGrid" class="row g-4">
@@ -104,7 +106,7 @@
         <div class="card shadow-sm border-3 rounded-4 h-100">
           <div class="position-relative text-center p-4 bg-light rounded-top">
             <span class="badge badge-exclusive position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill">EXCLUSIVE</span>
-            <img src="/images/1st.jpeg" class="card-img-top" alt="Premium Saffron 1g">
+            <img src="/images/1st.jpeg" class="card-img-top" alt="Exclusive Collection 10G">
           </div>
           <div class="card-body text-center">
             <h5 class="fw-bold">Exclusive Collection 10G</h5>
@@ -115,11 +117,9 @@
               <button class="btn btn-warning fw-bold add-to-cart-btn">
                 <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
               </button>
-              <a href="https://wa.me/+918169045778">
-              <button class="btn btn-warning fw-bold buy-now-btn">
-                 <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
-              </button>
-              </a>
+              <button id="buyNowBtn" class="btn btn-warning fw-bold buy-now-btn">
+  <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
+</button>
             </div>
           </div>
         </div>
@@ -130,7 +130,7 @@
         <div class="card shadow-sm border-3 rounded-4 h-100">
           <div class="position-relative text-center p-4 bg-light rounded-top">
             <span class="badge badge-gift position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill">GIFT BOX</span>
-            <img src="/images/giftbox.jpeg" class="card-img-top" alt="Premium Saffron 1g">
+            <img src="/images/giftbox.jpeg" class="card-img-top" alt="Premium Gift Box 5G">
           </div>
           <div class="card-body text-center">
             <h5 class="fw-bold">Premium Gift Box 5G</h5>
@@ -141,11 +141,9 @@
               <button class="btn btn-warning fw-bold add-to-cart-btn">
                 <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
               </button>
-              <a href="https://wa.me/+918169045778">
-              <button class="btn btn-warning fw-bold buy-now-btn">
-                 <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
-              </button>
-              </a>
+              <button id="buyNowBtn" class="btn btn-warning fw-bold buy-now-btn">
+  <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
+</button>
             </div>
           </div>
         </div>
@@ -156,7 +154,7 @@
         <div class="card shadow-sm border-3 rounded-4 h-100">
           <div class="position-relative text-center p-4 bg-light rounded-top">
             <span class="badge badge-premium position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill">PREMIUM</span>
-            <img src="/images/2nd.jpeg" class="card-img-top" alt="Premium Saffron 1g">
+            <img src="/images/2nd.jpeg" class="card-img-top" alt="Premium Saffron 1G">
           </div>
           <div class="card-body text-center">
             <h5 class="fw-bold">Premium Saffron 1G</h5>
@@ -167,11 +165,9 @@
               <button class="btn btn-warning fw-bold add-to-cart-btn">
                 <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
               </button>
-              <a href="https://wa.me/+918169045778">
-              <button class="btn btn-warning fw-bold buy-now-btn">
-                 <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
-              </button>
-              </a>
+              <button id="buyNowBtn" class="btn btn-warning fw-bold buy-now-btn">
+  <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
+</button>
             </div>
           </div>
         </div>
@@ -182,7 +178,7 @@
         <div class="card shadow-sm border-3 rounded-4 h-100">
           <div class="position-relative text-center p-4 bg-light rounded-top">
             <span class="badge badge-premium position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill">PREMIUM</span>
-            <img src="/images/2nd.jpeg" class="card-img-top" alt="Premium Saffron 1g">
+            <img src="/images/2nd.jpeg" class="card-img-top" alt="Premium Saffron 2G">
           </div>
           <div class="card-body text-center">
             <h5 class="fw-bold">Premium Saffron 2G</h5>
@@ -193,11 +189,9 @@
               <button class="btn btn-warning fw-bold add-to-cart-btn">
                 <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
               </button>
-              <a href="https://wa.me/+918169045778">
-              <button class="btn btn-warning fw-bold buy-now-btn">
-                 <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
-              </button>
-              </a>
+              <button id="buyNowBtn" class="btn btn-warning fw-bold buy-now-btn">
+  <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
+</button>
             </div>
           </div>
         </div>
@@ -208,23 +202,20 @@
         <div class="card shadow-sm border-3 rounded-4 h-100">
           <div class="position-relative text-center p-4 bg-light rounded-top">
             <span class="badge badge-premium position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill">PREMIUM</span>
-            <img src="/images/1st.jpeg" class="card-img-top" alt="Premium Saffron 1g">
+            <img src="/images/1st.jpeg" class="card-img-top" alt="Pure Kishtwar Saffron 5G">
           </div>
           <div class="card-body text-center">
             <h5 class="fw-bold">Pure Kishtwar Saffron 5G</h5>
-            <p class="text-muted">Premium saffron from Kishtwar, 5 gram <br>pack</p>
+            <p class="text-muted">Premium saffron from Kishtwar, 5 gram pack</p>
             <div class="text-warning mb-2">★★★★★ <span class="text-muted">(4.9)</span></div>
             <h3 class="text-warning fw-bold mb-3">₹2799</h3>
-            <!-- Buttons with space between and centered -->
             <div class="d-flex justify-content-center gap-3">
-               <button class="btn btn-warning fw-bold add-to-cart-btn">
-                   <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
-               </button>
-               <a href="https://wa.me/+918169045778">
-              <button class="btn btn-warning fw-bold buy-now-btn">
-                 <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
+              <button class="btn btn-warning fw-bold add-to-cart-btn">
+                <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
               </button>
-              </a>
+              <button id="buyNowBtn" class="btn btn-warning fw-bold buy-now-btn">
+  <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
+</button>
             </div>
           </div>
         </div>
@@ -235,23 +226,21 @@
         <div class="card shadow-sm border-3 rounded-4 h-100">
           <div class="position-relative text-center p-4 bg-light rounded-top">
             <span class="badge badge-gift position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill">GIFT BOX</span>
-            <img src="/images/giftbox.jpeg" class="card-img-top" alt="Premium Saffron 1g">
+            <img src="/images/giftbox.jpeg" class="card-img-top" alt="Royal Saffron Gift Set">
           </div>
           <div class="card-body text-center">
             <h5 class="fw-bold">Royal Saffron Gift Set</h5>
             <p class="text-muted">Luxury gift set with premium Kishtwar saffron</p>
             <div class="text-warning mb-2">★★★★★ <span class="text-muted">(4.9)</span></div>
             <h3 class="text-warning fw-bold mb-3">₹6999</h3>
-            <!-- Buttons with space between and centered -->
-          <div class="d-flex justify-content-center gap-3">
+            <div class="d-flex justify-content-center gap-3">
               <button class="btn btn-warning fw-bold add-to-cart-btn">
-                 <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
+                <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
               </button>
-              <a href="https://wa.me/+918169045778">
-              <button class="btn btn-warning fw-bold buy-now-btn">
-                 <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
-              </button>
-              </a>
+              <button id="buyNowBtn" class="btn btn-warning fw-bold buy-now-btn">
+  <i class="fa-solid fa-bag-shopping me-2"></i> Buy Now
+</button>
+            </div>
           </div>
         </div>
       </div>
@@ -261,187 +250,312 @@
 </section>
 
 
-<!-- Why Our Saffron is Special Section -->
-<section class="py-5 bg-light">
-  <div class="container text-center">
-    <br>
-    <h2 class="fw-bold mb-3">WHY OUR SAFFRON IS SPECIAL</h2>
-    <p class="text-muted mb-5">Understanding what makes Kishtwar saffron the world's finest</p>
 
-    <div class="row g-4">
-      <!-- Card 1 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card shadow-sm border-0 h-100 p-4 rounded-4">
-          <div class="mb-3">
-            <span class="d-inline-flex align-items-center justify-content-center bg-warning rounded-circle" style="width:70px; height:70px;">
-              <i class="fas fa-seedling fa-2x text-black"></i>
-            </span>
-          </div>
-          <h5 class="fw-bold">ORGANIC CULTIVATION</h5>
-          <p class="text-muted">Grown without any chemical fertilizers or pesticides, ensuring pure and natural saffron.</p>
-        </div>
+
+
+<!-- Checkout Modal -->
+<div id="checkoutModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+
+    <!-- Left Section -->
+    <div class="left" id="leftPanel">
+      <h2>Kishtwar Gold</h2>
+      <div class="order-box" id="mainOrderBox" onclick="toggleBox(this)">
+        <h3>Order Summary <span>+</span></h3>
+        <div class="order-details"></div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card shadow-sm border-0 h-100 p-4 rounded-4">
-          <div class="mb-3">
-            <span class="d-inline-flex align-items-center justify-content-center bg-warning rounded-circle" style="width:70px; height:70px;">
-              <i class="fas fa-thermometer-half fa-2x text-black"></i>
-            </span>
-          </div>
-          <h5 class="fw-bold">PERFECT CLIMATE</h5>
-          <p class="text-muted">Kishtwar's unique climate with cold winters and mild summers creates ideal conditions for saffron.</p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card shadow-sm border-0 h-100 p-4 rounded-4">
-          <div class="mb-3">
-            <span class="d-inline-flex align-items-center justify-content-center bg-warning rounded-circle" style="width:70px; height:70px;">
-              <i class="fas fa-award fa-2x text-black"></i>
-            </span>
-          </div>
-          <h5 class="fw-bold">AWARD WINNING</h5>
-          <p class="text-muted">Our saffron has won multiple awards for its superior quality and authentic taste.</p>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card shadow-sm border-0 h-100 p-4 rounded-4">
-          <div class="mb-3">
-            <span class="d-inline-flex align-items-center justify-content-center bg-warning rounded-circle" style="width:70px; height:70px;">
-              <i class="fas fa-truck fa-2x text-black"></i>
-            </span>
-          </div>
-          <h5 class="fw-bold">FRESH DELIVERY</h5>
-          <p class="text-muted">Direct from farm to your door, ensuring maximum freshness and potency.</p>
-        </div>
-      </div>
-    </div>
-    <br>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
-
-  <!-- About -->
-    <div class="footer-about">
-      <div class="footer-brand">
-        <div class="footer-logo-circle">
-          <img src="/images/logo.png" alt="Logo">
-        </div>
-        <div>
-          <h2>KISHTWAR GOLD</h2>
-          <p class="tagline">A FARMER'S BRAND</p>
-        </div>
-      </div>
-      <p class="footer-text">
-        From the pristine valleys of Kishtwar, bringing you the world's finest GI-tagged saffron. 
-        Pure, authentic, and handpicked for excellence.
-      </p>
-
-      <div class="social-icons">
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/kishtwar_gold/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-  </a>
-
-  <!-- YouTube -->
-  <a href="https://www.youtube.com/@PureKishtwarSaffron" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-  </a>
-
-  <!-- WhatsApp -->
-  <a href="https://wa.me/+918169045778" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-  </a>
-
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/company/kishtwar-gold" target="_blank" class="social-linkedin">
-  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-</a>
-</div>
+      <p class="secure">Secured by Cashfree</p>
     </div>
 
-    <!-- Quick Links -->
-    <div class="footer-links">
-      <h3 class="d-flex justify-content-between align-items-center"
-          data-bs-toggle="collapse" data-bs-target="#quickLinks" aria-expanded="false" aria-controls="quickLinks">
-        Quick Links <i class="fa-solid fa-chevron-down d-lg-none"></i>
-      </h3>
-      <ul id="quickLinks" class="collapse d-lg-block">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="review.html">Reviews</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+    <!-- Right Section -->
+    <div class="right">
+      <div class="steps">
+        <span class="active" data-step="0">Contact</span>
+        <span data-step="1">Address</span>
+        <span data-step="2">Payment</span>
+      </div>
 
-    <!-- Products -->
-    <div class="footer-links">
-      <h3 class="d-flex justify-content-between align-items-center"
-          data-bs-toggle="collapse" data-bs-target="#productsLinks" aria-expanded="false" aria-controls="productsLinks">
-        Products <i class="fa-solid fa-chevron-down d-lg-none"></i>
-      </h3>
-      <ul id="productsLinks" class="collapse d-lg-block">
-        <li><a href="products.html">Premium Saffron</a></li>
-        <li><a href="products.html">Gift Boxes</a></li>
-        <li><a href="products.html">Exclusive Collection</a></li>
-        <li><a href="cart.html">Shopping Cart</a></li>
-      </ul>
-    </div>
+      <!-- Step 0: Contact -->
+      <div class="step-content active" id="step0">
+        <h3>Contact Details</h3>
+        <form id="form0">
+          <div style="display:flex;gap:10px;">
+            <select id="countryCode" style="width:90px;" required>
+              <option value="+91">+91</option>
+              <option value="+1">+1</option>
+            </select>
+            <input id="mobile" type="tel" placeholder="Mobile Number" required>
+          </div>
+          <input id="email" type="email" placeholder="Email Address" required>
+          <div class="checkbox-row">
+            <input type="checkbox" id="offersCheck" checked>
+            <label for="offersCheck">Send me offers and order updates</label>
+          </div>
+          <button type="button" onclick="nextStep()">Continue</button>
+        </form>
+      </div>
 
-    <!-- Contact Info -->
-    <div class="footer-contact">
-      <h3 class="d-flex justify-content-between align-items-center"
-          data-bs-toggle="collapse" data-bs-target="#contactInfo" aria-expanded="false" aria-controls="contactInfo">
-        Contact Info <i class="fa-solid fa-chevron-down d-lg-none"></i>
-      </h3>
-      <div id="contactInfo" class="collapse d-lg-block">
-        <p><i class="fa-solid fa-location-dot"></i> Kishtwar, Jammu & Kashmir, India</p>
-        <p><i class="fa-solid fa-phone"></i> +91 81690 45778</p>
-        <p><i class="fa-solid fa-envelope"></i> support@kishtwargold.com</p>
-        <p><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</p>
+      <!-- Step 1: Address -->
+      <div class="step-content" id="step1">
+        <h3>Delivery Address</h3>
+        <form id="form1">
+          <input id="fullname" type="text" placeholder="Full Name" required>
+          <input id="house" type="text" placeholder="House No. / Building" required>
+          <input id="area" type="text" placeholder="Area / Locality" required>
+          <input id="city" type="text" placeholder="City" required>
+          <input id="state" type="text" placeholder="State" required>
+          <input id="pincode" type="text" placeholder="Pincode" required>
+          <div class="checkbox-row">
+            <input type="checkbox" id="saveAsCheck">
+            <label for="saveAsCheck">Save my address as default</label>
+          </div>
+          <button type="button" onclick="nextStep()">Continue</button>
+          <button type="button" class="back-btn" onclick="prevStep()">← Back</button>
+        </form>
+      </div>
 
-        <br>
-        <h3>Newsletter</h3>
-        <div class="newsletter">
-          <input type="email" id="newsletterEmail" placeholder="Your email">
-          <button id="newsletterBtn"><i class="fa-solid fa-paper-plane"></i></button>
-        </div>
+      <!-- Step 2: Payment -->
+      <div class="step-content" id="step2">
+        <h3>Payment</h3>
+        <form id="form2">
+          <select id="paymentMethod" required onchange="showPaymentFields()">
+            <option value="">Select Payment Method</option>
+            <option value="card">Credit / Debit Card</option>
+            <option value="upi">UPI</option>
+            <option value="cod">Cash on Delivery</option>
+          </select>
+
+          <!-- Card Fields -->
+          <div id="cardFields" class="payment-fields" style="display:none;flex-direction:column;gap:12px;">
+            <input type="text" placeholder="Card Number" maxlength="16" required>
+            <input type="text" placeholder="Expiry Date (MM/YY)" required>
+            <input type="text" placeholder="CVV" maxlength="3" required>
+          </div>
+
+          <!-- UPI Fields -->
+          <div id="upiFields" class="payment-fields" style="display:none;flex-direction:column;gap:12px;">
+            <input type="text" placeholder="Enter UPI ID (e.g. user@upi)" required>
+          </div>
+
+          <!-- COD Fields -->
+          <div id="codFields" class="payment-fields" style="display:none;flex-direction:column;gap:12px;">
+            <p style="font-size:14px;color:#444;">💵 You will pay in cash upon delivery.</p>
+          </div>
+
+          <button type="submit">Pay Now</button>
+          <button type="button" class="back-btn" onclick="prevStep()">← Back</button>
+        </form>
       </div>
     </div>
   </div>
-
-  <!-- Footer Bottom -->
-  <div class="footer-bottom">
-    <p>© 2024 Kishtwar Gold. All rights reserved.</p>
-    <div class="footer-policies">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">Shipping Policy</a>
-    </div>
-  </div>
-
-  <!-- Scroll To Top -->
-  <a href="#" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a>
-</footer>
-
-
-<!-- Newsletter Toast -->
-<div id="newsletterToast" class="form-toast">
-  Successfully subscribed to newsletter! <span class="close-btn">&times;</span>
 </div>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/js/product.js"></script>
+<!-- Detail Popup Modal -->
+<div id="detailModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeDetail">&times;</span>
+    <h3 id="detailTitle">Details</h3>
+    <form id="detailForm"></form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  
+  <!-- Why Our Saffron is Special Section -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <br>
+      <h2 class="fw-bold mb-3">WHY OUR SAFFRON IS SPECIAL</h2>
+      <p class="text-muted mb-5">Understanding what makes Kishtwar saffron the world's finest</p>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow-sm border-0 h-100 p-4 rounded-4">
+            <div class="mb-3">
+              <span class="d-inline-flex align-items-center justify-content-center bg-warning rounded-circle"
+                style="width:70px; height:70px;">
+                <i class="fas fa-seedling fa-2x text-black"></i>
+              </span>
+            </div>
+            <h5 class="fw-bold">ORGANIC CULTIVATION</h5>
+            <p class="text-muted">Grown without any chemical fertilizers or pesticides, ensuring pure and natural
+              saffron.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow-sm border-0 h-100 p-4 rounded-4">
+            <div class="mb-3">
+              <span class="d-inline-flex align-items-center justify-content-center bg-warning rounded-circle"
+                style="width:70px; height:70px;">
+                <i class="fas fa-thermometer-half fa-2x text-black"></i>
+              </span>
+            </div>
+            <h5 class="fw-bold">PERFECT CLIMATE</h5>
+            <p class="text-muted">Kishtwar's unique climate with cold winters and mild summers creates ideal conditions
+              for saffron.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow-sm border-0 h-100 p-4 rounded-4">
+            <div class="mb-3">
+              <span class="d-inline-flex align-items-center justify-content-center bg-warning rounded-circle"
+                style="width:70px; height:70px;">
+                <i class="fas fa-award fa-2x text-black"></i>
+              </span>
+            </div>
+            <h5 class="fw-bold">AWARD WINNING</h5>
+            <p class="text-muted">Our saffron has won multiple awards for its superior quality and authentic taste.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow-sm border-0 h-100 p-4 rounded-4">
+            <div class="mb-3">
+              <span class="d-inline-flex align-items-center justify-content-center bg-warning rounded-circle"
+                style="width:70px; height:70px;">
+                <i class="fas fa-truck fa-2x text-black"></i>
+              </span>
+            </div>
+            <h5 class="fw-bold">FRESH DELIVERY</h5>
+            <p class="text-muted">Direct from farm to your door, ensuring maximum freshness and potency.</p>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- About -->
+      <div class="footer-about">
+        <div class="footer-brand">
+          <div class="footer-logo-circle">
+            <img src="/images/logo.png" alt="Logo">
+          </div>
+          <div>
+            <h2>KISHTWAR GOLD</h2>
+            <p class="tagline">A FARMER'S BRAND</p>
+          </div>
+        </div>
+        <p class="footer-text">
+          From the pristine valleys of Kishtwar, bringing you the world's finest GI-tagged saffron.
+          Pure, authentic, and handpicked for excellence.
+        </p>
+
+        <div class="social-icons">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/kishtwar_gold/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+          </a>
+
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/@PureKishtwarSaffron" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/+918169045778" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/company/kishtwar-gold" target="_blank" class="social-linkedin">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h3 class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+          data-bs-target="#quickLinks" aria-expanded="false" aria-controls="quickLinks">
+          Quick Links <i class="fa-solid fa-chevron-down d-lg-none"></i>
+        </h3>
+        <ul id="quickLinks" class="collapse d-lg-block">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="review.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Products -->
+      <div class="footer-links">
+        <h3 class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+          data-bs-target="#productsLinks" aria-expanded="false" aria-controls="productsLinks">
+          Products <i class="fa-solid fa-chevron-down d-lg-none"></i>
+        </h3>
+        <ul id="productsLinks" class="collapse d-lg-block">
+          <li><a href="products.html">Premium Saffron</a></li>
+          <li><a href="products.html">Gift Boxes</a></li>
+          <li><a href="products.html">Exclusive Collection</a></li>
+          <li><a href="cart.html">Shopping Cart</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h3 class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+          data-bs-target="#contactInfo" aria-expanded="false" aria-controls="contactInfo">
+          Contact Info <i class="fa-solid fa-chevron-down d-lg-none"></i>
+        </h3>
+        <div id="contactInfo" class="collapse d-lg-block">
+          <p><i class="fa-solid fa-location-dot"></i> Kishtwar, Jammu & Kashmir, India</p>
+          <p><i class="fa-solid fa-phone"></i> +91 81690 45778</p>
+          <p><i class="fa-solid fa-envelope"></i> support@kishtwargold.com</p>
+          <p><i class="fa-solid fa-clock"></i> Mon - Sat: 9:00 AM - 7:00 PM</p>
+
+          <br>
+          <h3>Newsletter</h3>
+          <div class="newsletter">
+            <input type="email" id="newsletterEmail" placeholder="Your email">
+            <button id="newsletterBtn"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2024 Kishtwar Gold. All rights reserved.</p>
+      <div class="footer-policies">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Shipping Policy</a>
+      </div>
+    </div>
+
+    <!-- Scroll To Top -->
+    <a href="#" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a>
+  </footer>
+
+
+  <!-- Newsletter Toast -->
+  <div id="newsletterToast" class="form-toast">
+    Successfully subscribed to newsletter! <span class="close-btn">&times;</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/product.js"></script>
 </body>
+
 </html>
